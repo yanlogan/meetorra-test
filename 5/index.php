@@ -50,7 +50,7 @@
       }
 
       // Компании, в которых состоят только пользователи, не привязанные к другим компаниям
-      $query2 = "SELECT c.company_name
+      $companies_with_exclusive_users = "SELECT c.company_name
       -- связываем компании и информацию о них с пользователями, которые к ним привязаны, и информацией о них
       FROM company c
       JOIN company_user cu ON c.company_id = cu.company_id
@@ -66,7 +66,7 @@
       -- исключаем эти компании, оставляя только те, в которых состоят пользователи, привязанные к 0 или 1 компании
       WHERE multiple_companies.company_id IS NULL
       GROUP BY c.company_id, c.company_name;";
-      $result = $connection->query($query2);
+      $result = $connection->query($companies_with_exclusive_users);
       
       if ($result->num_rows > 0) {
         ?>
