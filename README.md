@@ -3,7 +3,7 @@
 ## Задание
 
 1. Реализуйте данный макет используя только html и css
-   ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fdbb3adb-b3cb-419b-b44c-9942d6c4268a/Untitled.png)
+   ![Test layout](https://ibb.co/YP51mVm)
 
 - Обратите внимания на то, что ширина карточки не зависит от экрана пользователя и если четыре штуки не входят в одну строку, то последняя переносится на новую строку.
 
