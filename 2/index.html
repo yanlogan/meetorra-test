@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Задание 2</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Задание 2</h1>
+      <h2>Задание: Дано 5 блоков с разной шириной, один из который НЕ содержит data-атрибута. Используя jquery
+        необходимо
+        отсортировать все блоки с data-атрибутом по ширине.</h2>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <button id="sortBlocks">Отсортировать</button>
+      <div class="blocks">
+        <div id="block-1" class="block" data-attr="block-1">Текст, текст, текст, текст (есть data-аттрибут)</div>
+        <div id="block-2" class="block" data-attr="block-2">Текст, текст, текст, текст, текст, текст, текст, текст,
+          текст (есть
+          data-аттрибут)</div>
+        <div id="block-3" class="block">Текст, текст, текст</div>
+        <div id="block-4" class="block" data-attr="block-4">Текст, текст, текст, текст, текст, текст (есть
+          data-аттрибут)</div>
+        <div id="block-5" class="block" data-attr="block-5">Текст, текст (есть data-аттрибут)</div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
